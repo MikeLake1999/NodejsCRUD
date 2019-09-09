@@ -42,7 +42,7 @@ employeeController.save = function(req, res) {
       res.render("../views/employees/create");
     } else {
       console.log("Successfully created an employee.");
-      res.redirect("/employees/show/"+employee._id);
+      res.redirect("/employees/show/"+ employee._id);
     }
   });
 };
